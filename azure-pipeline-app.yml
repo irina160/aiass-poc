@@ -18,6 +18,6 @@ steps:
       inlineScript: |
         azd deploy --no-prompt
     env:
-      AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
-      AZURE_ENV_NAME: $(AZURE_ENV_NAME)
-      AZURE_LOCATION: $(AZURE_LOCATION)
+      AZURE_SUBSCRIPTION_ID: 6ed9935b-8a0e-4136-a032-4921ae65ef71
+      AZURE_ENV_NAME: ai-ass-dev
+      AZURE_LOCATION: "West Europe"
