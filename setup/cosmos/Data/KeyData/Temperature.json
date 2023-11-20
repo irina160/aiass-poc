@@ -1,0 +1,20 @@
+[
+  {
+    "id": "e5210b44-1126-4c27-913f-978d60f1a6a4",
+    "display_name_en": "precise",
+    "display_name_de": "präzise",
+    "temperature": 0
+  },
+  {
+    "id": "06f27fdf-8f1c-45ac-b96f-669ed4e7ec71",
+    "display_name_en": "balanced",
+    "display_name_de": "ausbalanciert",
+    "temperature": 0.5
+  },
+  {
+    "id": "16257cfc-c071-42d7-8bd3-4249825287b7",
+    "display_name_de": "kreativ",
+    "display_name_en": "creative",
+    "temperature": 1
+  }
+]

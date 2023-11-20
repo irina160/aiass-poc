@@ -1,0 +1,334 @@
+[
+  {
+    "id": "7f1fd16d-4aef-11ee-ad31-3448ed340da2",
+    "name_de": "Wissensmanagement",
+    "name_en": "Knowledge Management",
+    "description_de": "desc de",
+    "description_en": "desc en",
+    "indices": [],
+    "features": {
+      "general": {
+        "allowCreationOfIndices": {
+          "type": "checkbox",
+          "name_de": "Erlaube die Erstellung von Indizes",
+          "name_en": "Allow the creation of indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "allowCreationOfCategories": {
+          "type": "checkbox",
+          "name_de": "Erlaube die Erstellung von Kategorien",
+          "name_en": "Allow the creation of categories",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        }
+      },
+      "indices": {
+        "enableCreateCategories": {
+          "type": "checkbox",
+          "name_de": "Erlaube die Erstellung von Kategorien innerhalb von Indexen",
+          "name_en": "Allow the creation of categories inside in indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "allowEditIndex": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Bearbeiten von Indexen",
+          "name_en": "Allow edit indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "allowDeleteIndex": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Löschen von Indexen",
+          "name_en": "Allow delete index",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        }
+      },
+      "categories": {
+        "enableFileUpload": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Hochladen von Dateien",
+          "name_en": "Allow the upload of files",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "filesMandatory": {
+          "type": "checkbox",
+          "name_de": "Datein müssen hochgeladen werden",
+          "name_en": "Files must be uploaded",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "allowEditCategory": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Bearbeiten von Indexen",
+          "name_en": "Allow edit indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "allowDeleteCategory": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Löschen von Indexen",
+          "name_en": "Allow delete index",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        }
+      },
+      "chat": {
+        "approach": {
+          "type": "radio",
+          "name_de": "Ansatz",
+          "name_en": "Approach",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "values": ["rtr", "rrr", "rda", "rrr", "sc"],
+          "default": "rrr"
+        }
+      },
+      "overrides": {
+        "retrieval mode": {
+          "type": "radio",
+          "name_de": "Abfragemodus",
+          "name_en": "Retrieval mode",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "values": ["hybrid", "vectors", "text"],
+          "default": "hybrid"
+        },
+        "semantic ranker": {
+          "type": "checkbox",
+          "name_de": "Semantischer Rangersteller",
+          "name_en": "Semantic ranker",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "semantic captions": {
+          "type": "checkbox",
+          "name_de": "Semantische Titel",
+          "name_en": "Semantic captions",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "top": {
+          "type": "input:number",
+          "name_de": "Top",
+          "name_en": "Top",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": 3
+        },
+        "prompt template": {
+          "type": "input:string",
+          "name_de": "Befehlsvorlage",
+          "name_en": "Prompt template",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": ""
+        },
+        "prompt template prefix": {
+          "type": "input:string",
+          "name_de": "Befehlsvorlage Präfix",
+          "name_en": "Prompt template prefix",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": ""
+        },
+        "prompt template suffix": {
+          "type": "input:string",
+          "name_de": "Befehlsvorlage Suffix",
+          "name_en": "Prompt template suffix",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": ""
+        },
+        "suggest followup questions": {
+          "type": "checkbox",
+          "name_de": "Schlage Folgefragen vor",
+          "name_en": "Suggest followup questions",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        }
+      }
+    }
+  },
+  {
+    "id": "2067dc02-2ea0-476c-b650-7752815d800b",
+    "name_de": "F&A ChatBot",
+    "name_en": "Q&A Chatbot",
+    "description_de": "desc de",
+    "description_en": "desc en",
+    "indices": [],
+    "features": {
+      "general": {
+        "allowCreationOfIndices": {
+          "type": "checkbox",
+          "name_de": "Erlaube die Erstellung von Indizes",
+          "name_en": "Allow the creation of indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": false
+        },
+        "allowCreationOfCategories": {
+          "type": "checkbox",
+          "name_de": "Erlaube die Erstellung von Kategorien",
+          "name_en": "Allow the creation of categories",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        }
+      },
+      "indices": {
+        "enableCreateCategories": {
+          "type": "checkbox",
+          "name_de": "Erlaube die Erstellung von Kategorien innerhalb von Indexen",
+          "name_en": "Allow the creation of categories inside in indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "allowEditIndex": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Bearbeiten von Indexen",
+          "name_en": "Allow edit indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": false
+        },
+        "allowDeleteIndex": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Löschen von Indexen",
+          "name_en": "Allow delete index",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        }
+      },
+      "categories": {
+        "enableFileUpload": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Hochladen von Dateien",
+          "name_en": "Allow the upload of files",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": false
+        },
+        "filesMandatory": {
+          "type": "checkbox",
+          "name_de": "Datein müssen hochgeladen werden",
+          "name_en": "Files must be uploaded",
+          "description_de": "Werden neue Kategorien erstellt müssen Dateien angehängt werden. Ist enableFileUpload nicht aktiv hat diese Einstellung keine Wirkung.",
+          "description_en": "desc en",
+          "default": false
+        },
+        "allowEditCategory": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Bearbeiten von Indexen",
+          "name_en": "Allow edit indices",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        },
+        "allowDeleteCategory": {
+          "type": "checkbox",
+          "name_de": "Erlaube das Löschen von Indexen",
+          "name_en": "Allow delete index",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": true
+        }
+      },
+      "chat": {
+        "approach": {
+          "type": "radio",
+          "name_de": "Ansatz",
+          "name_en": "Approach",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "values": ["rtr", "rrr", "rda", "rrr", "sc"],
+          "default": "sc"
+        }
+      },
+      "overrides": {
+        "retrieval mode": {
+          "type": "radio",
+          "name_de": "Abfragemodus",
+          "name_en": "Retrieval mode",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "values": ["hybrid", "vectors", "text"],
+          "default": "text"
+        },
+        "semantic ranker": {
+          "type": "checkbox",
+          "name_de": "Semantischer Rangersteller",
+          "name_en": "Semantic ranker",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": false
+        },
+        "semantic captions": {
+          "type": "checkbox",
+          "name_de": "Semantische Titel",
+          "name_en": "Semantic captions",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": false
+        },
+        "top": {
+          "type": "input:number",
+          "name_de": "Top",
+          "name_en": "Top",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": 3
+        },
+        "prompt template": {
+          "type": "input:string",
+          "name_de": "Befehlsvorlage",
+          "name_en": "Prompt template",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": ""
+        },
+        "prompt template prefix": {
+          "type": "input:string",
+          "name_de": "Befehlsvorlage Präfix",
+          "name_en": "Prompt template prefix",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": ""
+        },
+        "prompt template suffix": {
+          "type": "input:string",
+          "name_de": "Befehlsvorlage Suffix",
+          "name_en": "Prompt template suffix",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": ""
+        },
+        "suggest followup questions": {
+          "type": "checkbox",
+          "name_de": "Schlage Folgefragen vor",
+          "name_en": "Suggest followup questions",
+          "description_de": "desc de",
+          "description_en": "desc en",
+          "default": false
+        }
+      }
+    }
+  }
+]

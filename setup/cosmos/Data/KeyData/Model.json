@@ -1,0 +1,20 @@
+[
+  {
+    "id": "3972f45a-713d-4aaf-aa47-8c01b2e439eb",
+    "display_name_de": "gpt-3.5-turbo",
+    "display_name_en": "gpt-3.5-turbo",
+    "model": "gpt-35-turbo"
+  },
+  {
+    "id": "6156d4c9-fc74-4c81-81a5-ce418b5389ed",
+    "display_name_de": "gpt-4",
+    "display_name_en": "gpt-4",
+    "model": "gpt-4"
+  },
+  {
+    "id": "5ed9401c-33dd-4ab0-b386-7dc77bd24ca5",
+    "display_name_de": "gpt-4-32k",
+    "display_name_en": "gpt-4-32k",
+    "model": "gpt-4-32k"
+  }
+]
