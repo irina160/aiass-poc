@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Color palette (https://colors.muz.li/palette/00348f/003c64/bfe5ff/80ccff/ffffff):
+ * kpmg-blue: #00348f
+ * astronaut blue #003c64
+ * light blue: #bfe5ff
+ * baby blue: #80ccff
+ * white: #ffffff
+*/
+
+/*
+ * TODO: Adjust Color Palette and remove unnecessary stuff
+*/
+
+@layer base {
+    :root {
+        --white: 0 0% 100%;
+
+        --background: 210 12% 99%; /*whiteish*/
+        --foreground: 222.2 84% 4.9%; /*blackish #020817 */
+
+        --muted: 210 40% 96.1%; /* whitish #f1f5f9 */
+        --muted-foreground: 215.4 16.3% 46.9%; /* blue-greyish #65758b*/
+
+        --popover: 0 0% 100%; /* white #fffff*/
+        --popover-foreground: 222.2 84% 4.9%; /*blackish #020817*/
+
+        --card: 0 0% 100%; /* white #fffff*/
+        --card-foreground: 222.2 84% 4.9%; /* blackish #020817*/
+
+        --border: 214.3 31.8% 91.4%; /*light-blue-greyish #e1e7ef*/
+        --input: 214.3 31.8% 91.4%; /*light-blue-greyish #e1e7ef*/
+
+        --primary: 218 100% 28%; /*kpmg blue*/
+        --primary-foreground: 210 40% 98%; /* whiteish #f8fafc */
+
+        --secondary: 209 41% 90%; /* whitish #f1f5f9 */
+        --secondary-foreground: 218 100% 28%; /*kpmg blue*/
+
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 218 100% 28%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+
+        --ring: 215 20.2% 65.1%;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 219 100% 10%; /*222.2 84% 4.9%;*/
+        --foreground: 210 40% 98%;
+
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
+
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+
+        --primary: 210 40% 98%;
+        --primary-foreground: 218 100% 28%;
+
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 85.7% 97.3%;
+
+        --ring: 217.2 32.6% 30%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border box-border;
+    }
+    body {
+        @apply bg-background text-foreground m-0 p-0;
+    }
+    h1 {
+        @apply text-2xl;
+    }
+    @font-face {
+        font-family: KPMG Bold;
+        src: url(./assets/fonts/KPMG-Bold.ttf);
+    }
+    @font-face {
+        font-family: KPMG Bold Italic;
+        src: url(./assets/fonts/KPMG-Bold-Italic.ttf);
+    }
+    @font-face {
+        font-family: KPMG Extralight;
+        src: url(./assets/fonts/KPMG-Extralight.ttf);
+    }
+    @font-face {
+        font-family: KPMG Extralight Italic;
+        src: url(./assets/fonts/KPMG-Extralight\ Italic.ttf);
+    }
+    @font-face {
+        font-family: KPMG Light;
+        src: url(./assets/fonts/KPMG-Light.ttf);
+    }
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
+
+html {
+    background: #f2f2f2;
+
+    font-family:
+        "Segoe UI",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    height: 100%;
+}
