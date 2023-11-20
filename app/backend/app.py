@@ -62,27 +62,27 @@ from config.config import DevelopementConfig, ProductionConfig
 
 # Replace these with your own values, either in environment variables or directly here
 # Search Vars
-AZURE_SEARCH_SERVICE = os.getenv("AZURE_SEARCH_SERVICE", "gptkb")
+AZURE_SEARCH_SERVICE = os.getenv("AZURE_SEARCH_SERVICE", "cogn-search-aiass")
 AZURE_SEARCH_SERVICE_KEY = os.getenv("AZURE_SEARCH_SERVICE_KEY", "")
-AZURE_SEARCH_INDEX = os.getenv("AZURE_SEARCH_INDEX", "gptkbindex")
+AZURE_SEARCH_INDEX = os.getenv("AZURE_SEARCH_INDEX", "minisample-01") #replace later!
 
 # Openai Vars
-AZURE_OPENAI_SERVICE = os.getenv("AZURE_OPENAI_SERVICE", "myopenai")
+AZURE_OPENAI_SERVICE = os.getenv("AZURE_OPENAI_SERVICE", "AIA-PoC")
 AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY", "")
 ## Remove this: does not exists anymore
-AZURE_OPENAI_GPT_DEPLOYMENT = os.getenv("AZURE_OPENAI_GPT_DEPLOYMENT", "davinci")
+##AZURE_OPENAI_GPT_DEPLOYMENT = os.getenv("AZURE_OPENAI_GPT_DEPLOYMENT", "davinci")
 ##
-AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.getenv("AZURE_OPENAI_CHATGPT_DEPLOYMENT", "chat")
+AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.getenv("AZURE_OPENAI_CHATGPT_DEPLOYMENT", "gpt-35-turbo-assistant")
 AZURE_OPENAI_CHATGPT_MODEL = os.getenv("AZURE_OPENAI_CHATGPT_MODEL", "gpt-35-turbo")
-AZURE_OPENAI_EMB_DEPLOYMENT = os.getenv("AZURE_OPENAI_EMB_DEPLOYMENT", "embedding")
+AZURE_OPENAI_EMB_DEPLOYMENT = os.getenv("AZURE_OPENAI_EMB_DEPLOYMENT", "text-embedding-ada-002")
 AZURE_OPENAI_EMB_MODEL = os.getenv("AZURE_OPENAI_EMB_MODEL", "text-embedding-ada-002")
 # Storage Vars
-AZURE_STORAGE_ACCOUNT = os.getenv("AZURE_STORAGE_ACCOUNT", "mystorageaccount")
-AZURE_STORAGE_CONTAINER = os.getenv("AZURE_STORAGE_CONTAINER", "content")
+AZURE_STORAGE_ACCOUNT = os.getenv("AZURE_STORAGE_ACCOUNT", "csb10032002fdf6a803")
+AZURE_STORAGE_CONTAINER = os.getenv("AZURE_STORAGE_CONTAINER", "documents")
 
 # Cosmosdb
-AZURE_COSMOSDB_SERVICE = os.getenv("AZURE_COSMOSDB_SERVICE", "cosmosdb120923")
-AZURE_COSMOSDB_KEY = os.getenv("AZURE_COSMOSDB_KEY", "")
+AZURE_COSMOSDB_SERVICE = os.getenv("AZURE_COSMOSDB_SERVICE", "db-policyaiassistant-dev-wa")
+AZURE_COSMOSDB_KEY = os.getenv("AZURE_COSMOSDB_KEY", "") # should not be written here, or?
 
 # COSMOSDB
 # FIXME: Hardcoded the database name - not really a good idea
