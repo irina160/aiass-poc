@@ -12,7 +12,7 @@ steps:
   - task: AzureCLI@2
     displayName: Deploy Application
     inputs:
-      azureSubscription: "Sandbox ARM Service Connection"
+      azureSubscription: "VSE AI Assistent DEV"
       scriptType: bash
       scriptLocation: inlineScript
       inlineScript: |
