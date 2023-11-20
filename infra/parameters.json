@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "azure_test"
+    },
+    "resourceGroupName": {
+      "value": "rg-azure_test"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "principalId": {
+      "value": "fb082113-eace-4c66-a8ff-cd17e207fd2b"
+    },
+    "openAiServiceName": {
+      "value": "cog-dqud6ia3d5zj2"
+    },
+    "openAiResourceGroupName": {
+      "value": "rg-azure_test"
+    },
+    "openAiSkuName": {
+      "value": "S0"
+    },
+    "formRecognizerServiceName": {
+      "value": "cog-fr-dqud6ia3d5zj2"
+    },
+    "formRecognizerResourceGroupName": {
+      "value": "rg-azure_test"
+    },
+    "formRecognizerSkuName": {
+      "value": "S0"
+    },
+    "searchIndexName": {
+      "value": "gptkbindex"
+    },
+    "searchServiceName": {
+      "value": "gptkb-dqud6ia3d5zj2"
+    },
+    "searchServiceResourceGroupName": {
+      "value": "rg-azure_test"
+    },
+    "searchServiceSkuName": {
+      "value": "standard"
+    },
+    "storageAccountName": {
+      "value": "stdqud6ia3d5zj2"
+    },
+    "storageResourceGroupName": {
+      "value": "rg-azure_test"
+    },
+    "chatGptDeploymentName": {
+      "value": "chat"
+    },
+    "gptDeploymentName": {
+      "value": "davinci"
+    },
+    "useApplicationInsights": {
+      "value": false
+    }
+  }
+}
