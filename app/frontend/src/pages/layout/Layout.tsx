@@ -15,9 +15,7 @@ const Layout = (): JSX.Element => {
             </main>
             <footer>
                 <span className=" font-KPMGBoldItalic text-foreground hidden">
-                    © 2022 KPMG AG Wirtschaftsprüfungsgesellschaft, a corporation under German law and a member firm of the KPMG global organization of
-                    independent member firms affiliated with KPMG International Limited, a private English company limited by guarantee. All rights reserved.
-                    The KPMG name and logo are trademarks used under license by the independent member firms of the KPMG global organization.
+                    © 2023 VERBUND AG. All rights reserved.
                 </span>
             </footer>
         </div>
