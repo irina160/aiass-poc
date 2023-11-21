@@ -12,14 +12,14 @@ jobs:
   steps:
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'Sandbox ARM Service Connection'
+        azureSubscription: 'VSE AI Assistent DEV'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
-          SUBSCRIPTION_ID='77a1495e-377b-4261-912c-ee21dcd9526b'
-          RESOURCE_GROUP='rg-feature_branch_deployment' 
+          SUBSCRIPTION_ID='6ed9935b-8a0e-4136-a032-4921ae65ef71'
+          RESOURCE_GROUP='cloud-shell-storage-westeurope' 
           TENANT_ID=$(az account show --query tenantId -o tsv)
-          APP_ID=$(az ad sp list --display-name "Sandbox ARM Service Connection" --query "[0].appId" -o tsv)
+          APP_ID=$(az ad sp list --display-name "policyaiassistant-dev-wa" --query "[0].appId" -o tsv)
           SECRET=$(az ad sp credential reset --name $APP_ID --query password -o tsv)
           RESOURCES=$(az resource list --resource-group $RESOURCE_GROUP --query "[].{Name:name, Type:type}" -o tsv)
           for RESOURCE in $RESOURCES
